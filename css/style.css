@@ -256,6 +256,16 @@ footer {
     font-size: 0.9rem;
 }
 
+footer a {
+    color: #cbd5e1;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
+
 /* Mobile Adjustments */
 @media (max-width: 600px) {
     .container {
