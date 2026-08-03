@@ -306,6 +306,6 @@ footer a:hover {
 /* Legère augmentation de la taille de base sur desktop / grands écrans */
 @media (min-width: 768px) {
     html {
-        font-size: 19px;
+        font-size: 18px;
     }
 }
