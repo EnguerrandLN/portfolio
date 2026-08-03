@@ -62,11 +62,13 @@
                 <div
                     style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem 1rem;">
                     <h4 style="font-size: 1.35rem; margin-bottom: 0;">Seoul National University</h4>
-                    <span style="color: var(--text-muted); font-size: 0.9rem; white-space: nowrap;">Sep 2026 - Dec
+                    <span style="color: var(--text-muted); font-size: 0.9rem; white-space: nowrap;">Sep 2026 – Dec
                         2026</span>
                 </div>
                 <p style="color: var(--text-muted); margin-bottom: 0.25rem;">Seoul, South Korea</p>
-                <p style="font-size: 0.95rem; margin-bottom: 0.75rem;">Academic Exchange Program</p>
+                <p
+                    style="font-size: 0.85rem; font-weight: 600; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.75rem;">
+                    Academic Exchange Program</p>
                 <p>Coursework focuses on <strong>Artificial Intelligence, Applied Mathematics, and Computer
                         Vision</strong>, complemented by an intensive Japanese and Korean language program.</p>
             </div>
@@ -75,21 +77,21 @@
                 <div
                     style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem 1rem;">
                     <h4 style="font-size: 1.35rem; margin-bottom: 0;">Télécom Paris</h4>
-                    <span style="color: var(--text-muted); font-size: 0.9rem; white-space: nowrap;">Sep 2024 - Expected
+                    <span style="color: var(--text-muted); font-size: 0.9rem; white-space: nowrap;">Sep 2024 – Expected
                         Jun 2027</span>
                 </div>
                 <p style="color: var(--text-muted); margin-bottom: 0.25rem;">Institut Polytechnique de Paris — Paris,
                     France</p>
-                <p style="font-size: 0.95rem; margin-bottom: 0.75rem;">MSc in Engineering</p>
+                <p
+                    style="font-size: 0.85rem; font-weight: 600; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.75rem;">
+                    MSc in Engineering</p>
                 <ul style="color: var(--text-main);">
                     <li><strong>MACS (Random Modeling & Scientific Computing):</strong> Stochastic calculus, statistical
                         learning, and numerical methods for high-dimensional problems.</li>
                     <li><strong>IMA (Image Processing & Computer Vision):</strong> Variational, Bayesian, and deep
-                        learning
-                        methods for image analysis, 3D vision, and medical imaging.</li>
+                        learning methods for image analysis, 3D vision, and medical imaging.</li>
                     <li><strong>Data Science Track:</strong> Statistical estimation, hypothesis testing, and core
-                        machine
-                        learning models (SVM, random forests, neural networks).</li>
+                        machine learning models (SVM, random forests, neural networks).</li>
                 </ul>
             </div>
 
@@ -97,17 +99,35 @@
                 <div
                     style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem 1rem;">
                     <h4 style="font-size: 1.35rem; margin-bottom: 0;">Lycée Thiers</h4>
-                    <span style="color: var(--text-muted); font-size: 0.9rem; white-space: nowrap;">Sep 2021 - Jun
+                    <span style="color: var(--text-muted); font-size: 0.9rem; white-space: nowrap;">Sep 2021 – Jun
                         2024</span>
                 </div>
                 <p style="color: var(--text-muted); margin-bottom: 0.25rem;">CPGE MPSI / MP* — Marseille, France</p>
-                <p style="font-size: 0.95rem; margin-bottom: 0.75rem;">Intensive Preparation for French Grandes Écoles
-                </p>
+                <p
+                    style="font-size: 0.85rem; font-weight: 600; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.75rem;">
+                    Intensive Preparation for French Grandes Écoles</p>
                 <p>A highly selective 3-year academic program (ranked top 5% nationally). Developed strong analytical
                     problem-solving skills and a profound foundation in pure Mathematics, Physics, and Computer
                     Science.</p>
             </div>
         </div>
+    </section>
+
+    <div>
+        <div
+            style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem 1rem;">
+            <h4 style="font-size: 1.35rem; margin-bottom: 0;">Lycée Thiers</h4>
+            <span style="color: var(--text-muted); font-size: 0.9rem; white-space: nowrap;">Sep 2021 - Jun
+                2024</span>
+        </div>
+        <p style="color: var(--text-muted); margin-bottom: 0.25rem;">CPGE MPSI / MP* — Marseille, France</p>
+        <p style="font-size: 0.95rem; margin-bottom: 0.75rem;">Intensive Preparation for French Grandes Écoles
+        </p>
+        <p>A highly selective 3-year academic program (ranked top 5% nationally). Developed strong analytical
+            problem-solving skills and a profound foundation in pure Mathematics, Physics, and Computer
+            Science.</p>
+    </div>
+    </div>
     </section>
 
     <section id="projects" class="section">
@@ -124,15 +144,11 @@
                     <span class="tag">PyTorch</span>
                     <span class="tag">ConvNeXt</span>
                 </div>
-                <p><strong>Context:</strong> End-to-end deep learning pipeline to classify 13 types of white blood cells
-                    for clinical diagnostics.</p>
-                <p><strong>The Challenge:</strong> Severe class imbalance, clinical domain shift, and high colorimetric
-                    variations due to staining techniques.</p>
-                <p><strong>The Architecture:</strong> Implemented a <strong>ConvNeXt</strong> model utilizing Transfer
-                    Learning, Automatic Mixed Precision (AMP), and CLAHE preprocessing. Mitigated data asymmetry using a
-                    WeightedRandomSampler, Focal Loss, and a 4-Fold Stratified Ensembling strategy.</p>
-                <p><strong>Impact:</strong> Achieved a 0.7839 F1-Score Macro, securing a <strong>Top 5/77
-                        ranking</strong> on the competitive leaderboard.</p>
+                <p>For this diagnostic imaging challenge, I had to classify 13 types of white blood cells from
+                    microscopy images, despite strong class imbalance and inconsistent staining across samples. I first
+                    tried a classical computer vision pipeline based on hand-engineered features, then moved to a deep
+                    learning approach built around a ConvNeXt model, which handled the variation and rare classes far
+                    better. The final model reached a macro F1-score of 0.7839, placing 5th out of 77 submissions.</p>
                 <a href="https://github.com/EnguerrandLN/White-Blood-Cell-Classification" target="_blank"
                     class="link">View Repository on GitHub &rarr;</a>
             </div>
@@ -144,15 +160,17 @@
                     <span class="tag">CNN (VGG16)</span>
                     <span class="tag">Math & Statistics</span>
                 </div>
-                <p><strong>Context:</strong> Multi-modal feature extraction and clustering pipeline to categorize
-                    abstract paintings without ground-truth labels.</p>
-                <p><strong>The Challenge:</strong> Abstract art relies on textures rather than distinct spatial objects,
-                    limiting the effectiveness of standard object-detection CNNs.</p>
-                <p><strong>The Architecture:</strong> Engineered a spatial-invariant texture extractor using VGG16 Gram
-                    matrices. Fused CNN, VAE, and Geometric embeddings via alpha-blending, and designed a custom "Core
-                    Silhouette" statistical algorithm to prune ambiguous K-Means clusters.</p>
-                <p><strong>Impact:</strong> Delivered a complete evaluation pipeline (including t-SNE and distance
-                    matrices) with automated database scripts for web integration.</p>
+                <p>The goal was to sort a collection of abstract paintings into stylistic groups without any labeled
+                    data
+                    to guide us, a task made harder by the fact that abstract art relies on texture and color rather
+                    than
+                    the recognizable objects most computer vision models are built to detect. On this team project, I
+                    worked on the computer vision and clustering side: extracting style signatures with a CNN, fusing
+                    them
+                    with other feature spaces, and refining the resulting clusters with a custom filtering algorithm.
+                    The
+                    result was a full evaluation pipeline feeding into an interactive WebGL tool for exploring the
+                    paintings.</p>
                 <a href="https://github.com/EnguerrandLN/classification-of-abstract-painting" target="_blank"
                     class="link">View Repository on GitHub &rarr;</a>
             </div>
@@ -197,7 +215,7 @@
 
             <div class="project-card">
                 <h4>Treasurer for Salon du Terroir</h4>
-                <p><strong>Télécom Paris (2026)</strong></p>
+                <p><strong>Télécom Paris (2025 - 2026)</strong></p>
                 <ul>
                     <li>Managed financial oversight and logistical coordination for a major student exhibition that drew
                         <strong>over 1,000 attendees</strong>.
@@ -229,9 +247,9 @@
                 </div>
                 <div class="skill-category">
                     <h4>Computer Vision & Deep Learning</h4>
-                    <p>3D Vision (Point Clouds, Stereo), Tracking (Kalman, Optical Flow), Generative Models (GANs, VAEs,
-                        Auto-encoders), Medical Imaging (Segmentation, Registration), CNNs, Patch-based methods, SAR &
-                        Hyperspectral Imaging.</p>
+                    <p>3D Vision (Point Clouds, Stereo, RGBD), Tracking (Kalman, Optical Flow), Generative Models
+                        (GANs, VAEs, Auto-encoders), Medical Imaging (Segmentation, Registration), CNNs, Patch-based
+                        methods, SAR & Hyperspectral Imaging.</p>
                 </div>
                 <div class="skill-category">
                     <h4>Applied Math & Stochastic Modeling</h4>
@@ -264,12 +282,18 @@
                 </div>
                 <div class="skill-category">
                     <h4>Scuba Diving</h4>
-                    <p>Certified diver, drawn to the sense of freedom and the beauty found beneath the surface.</p>
+                    <p>A certified diver in my free time, mostly for the freedom and the scenery you find
+                        underwater.</p>
                 </div>
                 <div class="skill-category">
                     <h4>Traveling</h4>
                     <p>Discovering new countries and cultures. It is also what motivates this search for an
                         international internship.</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Game Development</h4>
+                    <p>Building small games in Godot, I love to participate in game jams, it's a great way to challenge
+                        myself and to meet new people.</p>
                 </div>
             </div>
         </div>
