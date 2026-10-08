@@ -19,7 +19,7 @@
 
     <link rel="icon"
         href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231d4ed8'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3EEL%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=2026-10-08b">
 
     <script type="application/ld+json">
     {
@@ -47,8 +47,8 @@
     <nav class="navbar" aria-label="Main">
         <div class="container">
             <a class="brand" href="#top">Enguerrand Le Niliot</a>
-            <a href="#projects">Projects</a>
             <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
             <a href="#leadership">Leadership</a>
             <a href="#skills">Skills</a>
             <a href="#passions">Passions</a>
@@ -116,7 +116,63 @@
             </div>
         </header>
 
-        <section id="projects" class="section bg-alt">
+        <section id="education" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <p class="section-intro">French engineering curriculum with a strong applied mathematics core.</p>
+
+                <div class="entry">
+                    <div class="entry-head">
+                        <h3>Seoul National University</h3>
+                        <span class="entry-date">Sep 2026 - Dec 2026</span>
+                    </div>
+                    <p class="entry-sub">Seoul, South Korea</p>
+                    <p class="entry-label">Academic exchange program, graduate courses</p>
+                    <ul>
+                        <li><strong>Probabilistic Graphical Models:</strong> Bayesian networks and MRFs, exact and
+                            variational inference, sampling, HMM and state-space models, boosting.</li>
+                        <li><strong>Random Signal Theory:</strong> MMSE, MAP and ML estimation, Cramér-Rao bound, Wiener
+                            and Kalman filtering, detection theory.</li>
+                        <li><strong>Modern Computational Mathematics:</strong> computer algebra, Monte Carlo methods,
+                            numerical schemes for SDEs and BSDEs.</li>
+                        <li><strong>Prompt and Context Engineering for LLM Applications:</strong> retrieval-augmented
+                            generation (RAG, GraphRAG), LLM agents and tool use, evaluation and guardrails.</li>
+                    </ul>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-head">
+                        <h3>Télécom Paris</h3>
+                        <span class="entry-date">Sep 2024 - Jun 2027 (expected)</span>
+                    </div>
+                    <p class="entry-sub">Institut Polytechnique de Paris, Paris, France</p>
+                    <p class="entry-label">MSc in Engineering (Diplôme d'ingénieur)</p>
+                    <ul>
+                        <li><strong>MACS, Stochastic Modelling and Scientific Computing:</strong> martingales, Brownian
+                            motion and stochastic calculus, Poisson processes, Markov chains and time series,
+                            statistical learning and high-dimensional probability, numerical analysis.</li>
+                        <li><strong>IMA, Image Processing and Computer Vision:</strong> deep learning for object
+                            recognition, generative models and patch methods, 3D vision and video, medical imaging,
+                            variational and Bayesian methods.</li>
+                        <li><strong>Data Science specialization:</strong> statistics, machine learning, optimization,
+                            databases.</li>
+                    </ul>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-head">
+                        <h3>Lycée Thiers</h3>
+                        <span class="entry-date">Sep 2021 - Jun 2024</span>
+                    </div>
+                    <p class="entry-sub">CPGE MPSI / MP*, Marseille, France</p>
+                    <p class="entry-label">Intensive preparation for the French Grandes Écoles</p>
+                    <p>A selective three-year program in mathematics, physics and computer science, preparing for the
+                        competitive entrance exams of the French engineering schools.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
             <div class="container">
                 <h2 class="section-title">Projects</h2>
                 <p class="section-intro">Each project states the problem, what I did and the measured result. Code is on
@@ -311,59 +367,6 @@
             </div>
         </section>
 
-        <section id="education" class="section">
-            <div class="container">
-                <h2 class="section-title">Education</h2>
-                <p class="section-intro">French engineering curriculum with a strong applied mathematics core.</p>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3>Seoul National University</h3>
-                        <span class="entry-date">Sep 2026 - Dec 2026</span>
-                    </div>
-                    <p class="entry-sub">Academic exchange, graduate courses, Seoul, South Korea</p>
-                    <ul>
-                        <li><strong>Probabilistic Graphical Models:</strong> Bayesian networks and MRFs, exact and
-                            variational inference, sampling, HMM and state-space models, boosting.</li>
-                        <li><strong>Random Signal Theory:</strong> MMSE, MAP and ML estimation, Cramér-Rao bound, Wiener
-                            and Kalman filtering, detection theory.</li>
-                        <li><strong>Modern Computational Mathematics:</strong> computer algebra, Monte Carlo methods,
-                            numerical schemes for SDEs and BSDEs.</li>
-                        <li><strong>Prompt and Context Engineering for LLM Applications:</strong> retrieval-augmented
-                            generation (RAG, GraphRAG), LLM agents and tool use, evaluation and guardrails.</li>
-                    </ul>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3>Télécom Paris, Institut Polytechnique de Paris</h3>
-                        <span class="entry-date">Sep 2024 - Jun 2027 (expected)</span>
-                    </div>
-                    <p class="entry-sub">MSc in Engineering (Diplôme d'ingénieur), Palaiseau, France</p>
-                    <ul>
-                        <li><strong>MACS, Stochastic Modelling and Scientific Computing:</strong> martingales, Brownian
-                            motion and stochastic calculus, Poisson processes, Markov chains and time series,
-                            statistical learning and high-dimensional probability, numerical analysis.</li>
-                        <li><strong>IMA, Image Processing and Computer Vision:</strong> deep learning for object
-                            recognition, generative models and patch methods, 3D vision and video, medical imaging,
-                            variational and Bayesian methods.</li>
-                        <li><strong>Data Science specialization:</strong> statistics, machine learning, optimization,
-                            databases.</li>
-                    </ul>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3>Lycée Thiers</h3>
-                        <span class="entry-date">Sep 2021 - Jun 2024</span>
-                    </div>
-                    <p class="entry-sub">CPGE MPSI / MP*, Marseille, France</p>
-                    <p>Intensive classes preparing for the competitive entrance exams of the French Grandes Écoles, in
-                        mathematics, physics and computer science.</p>
-                </div>
-            </div>
-        </section>
-
         <section id="leadership" class="section bg-alt">
             <div class="container">
                 <h2 class="section-title">Leadership</h2>
@@ -443,24 +446,24 @@
                 <h2 class="section-title">Passions</h2>
                 <p class="section-intro">What I do when I am not training models.</p>
 
-                <div class="skills-grid">
-                    <div class="skill-category">
+                <div class="passions-grid">
+                    <div class="passion">
                         <h3>Esports</h3>
                         <p>I follow competitive scenes closely, as a spectator and as an organizer: I chaired the
                             Télécom Paris gaming club and its inter-school LAN tournament. My League of Legends draft
                             model grew out of this interest.</p>
                     </div>
-                    <div class="skill-category">
+                    <div class="passion">
                         <h3>Game jams</h3>
                         <p>I build small games in Godot and take part in game jams like the Global Game Jam. Shipping
                             something playable in 48 hours with a team is a great way to challenge myself and meet new
                             people.</p>
                     </div>
-                    <div class="skill-category">
+                    <div class="passion">
                         <h3>Scuba diving</h3>
                         <p>A certified diver, mostly for the freedom and the scenery you only find underwater.</p>
                     </div>
-                    <div class="skill-category">
+                    <div class="passion">
                         <h3>Travelling</h3>
                         <p>Discovering new countries and cultures. Living in Seoul this semester, after studying Japanese
                             in France, is also what drives my search for an internship in East Asia.</p>
