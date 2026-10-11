@@ -125,6 +125,11 @@ h2.section-title {
     margin-bottom: 2rem;
 }
 
+.section-title + .skills-grid,
+.section-title + .passions-grid {
+    margin-top: 1.5rem;
+}
+
 p,
 ul {
     margin-bottom: 1rem;
